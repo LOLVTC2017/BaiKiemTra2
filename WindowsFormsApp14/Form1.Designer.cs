@@ -52,6 +52,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cbx_lophoc = new System.Windows.Forms.ComboBox();
+            this.MASV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quequan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -123,6 +128,12 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MASV,
+            this.hoten,
+            this.ngaysinh,
+            this.Gioitinh,
+            this.Quequan});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.GridColor = System.Drawing.Color.LightGray;
             this.dataGridView1.Location = new System.Drawing.Point(3, 16);
@@ -288,6 +299,36 @@
             this.cbx_lophoc.Size = new System.Drawing.Size(159, 21);
             this.cbx_lophoc.TabIndex = 14;
             // 
+            // MASV
+            // 
+            this.MASV.DataPropertyName = "MASV";
+            this.MASV.HeaderText = "Mã Sinh Viên";
+            this.MASV.Name = "MASV";
+            // 
+            // hoten
+            // 
+            this.hoten.DataPropertyName = "HOTEN";
+            this.hoten.HeaderText = "Họ Tên Sinh Viên";
+            this.hoten.Name = "hoten";
+            // 
+            // ngaysinh
+            // 
+            this.ngaysinh.DataPropertyName = "NGAYSINH";
+            this.ngaysinh.HeaderText = "Ngày Sinh";
+            this.ngaysinh.Name = "ngaysinh";
+            // 
+            // Gioitinh
+            // 
+            this.Gioitinh.DataPropertyName = "GIOITINH";
+            this.Gioitinh.HeaderText = "Giới Tính";
+            this.Gioitinh.Name = "Gioitinh";
+            // 
+            // Quequan
+            // 
+            this.Quequan.DataPropertyName = "QUEQUAN";
+            this.Quequan.HeaderText = "Quê Quán";
+            this.Quequan.Name = "Quequan";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,6 +381,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbx_lophoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MASV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hoten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaysinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gioitinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quequan;
     }
 }
 
